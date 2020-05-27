@@ -6,16 +6,17 @@ html{
     background: url("../images/fondo-bienvenidos.jpg");
     background-size: cover;
     height: 100vh;
+    overflow: hidden;
 }
 
-.encabezado{
-    background: rgba(0,0,0,0.28);
+.fixed-top{
+    background: rgba(0,0,0,0.60);
 }
 
-.navbar-light .navbar-brand{
+.navbar-dark .navbar-brand{
     color: rgb(253,253,253);
     font-size: 1.3rem;
-    text-transform: uppercase;
+    text-transform: uppercase !important;
 }
 
 .navbar-toggler{
@@ -42,7 +43,19 @@ html{
     color: rgba(255,255,255,1);
     background: #F05F40 !important;
 }
+.texto-bienvenidos{
+    margin-top: 6rem;
+    color: #fff;
+}
+.btn-primary{
+    color:#fff;
+    background-color: #F05F40;
+    border-color: #b93e24;
+    transition: all .5s ease;
+}
 
-.navbar-dark .navbar-nav .nav-link {
-    margin: 0.2rem;
+.btn-primary:hover {
+    color: #fff;
+    background-color: #F17f66;
+    border-color: #F05F40;
 }
