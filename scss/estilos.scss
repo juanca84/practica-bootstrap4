@@ -32,6 +32,9 @@ html{
 }
 .nav-link {
     text-align: center;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
 }
 
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
@@ -44,7 +47,7 @@ html{
     background: #F05F40 !important;
 }
 .texto-bienvenidos{
-    margin-top: 6rem;
+    margin-top: 9rem;
     color: #fff;
 }
 .btn-primary{
@@ -96,4 +99,12 @@ footer{
     color: #fff;
     background-color: #000;
 }
-
+@media(min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+    .bienvenidos{
+        background: url("../images/fondo-bienvenido-grande.jpg");
+        background-size: cover;
+    }
+}

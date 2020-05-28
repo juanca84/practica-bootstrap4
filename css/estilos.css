@@ -25,7 +25,11 @@ html {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); }
 
 .nav-link {
-  text-align: center; }
+  text-align: center;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
 
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
   color: #fff;
@@ -36,7 +40,7 @@ html {
   background: #F05F40 !important; }
 
 .texto-bienvenidos {
-  margin-top: 6rem;
+  margin-top: 9rem;
   color: #fff; }
 
 .btn-primary {
@@ -83,5 +87,13 @@ html {
 footer {
   color: #fff;
   background-color: #000; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px; }
+
+  .bienvenidos {
+    background: url("../images/fondo-bienvenido-grande.jpg");
+    background-size: cover; } }
 
 /*# sourceMappingURL=estilos.css.map */
